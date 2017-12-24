@@ -188,7 +188,7 @@ module Discord
     # Message History" permission.
     #
     # [API docs for this method](https://discordapp.com/developers/docs/resources/channel#get-channel-messages)
-    def get_channel_messages(channel_id : UInt64, limit : UInt8 = 50, before : UInt64? = nil, after : UInt64? = nil, around : UInt64? = nil)
+    def get_channel_messages(channel_id : UInt64, limit : UInt8 = 50_u8, before : UInt64? = nil, after : UInt64? = nil, around : UInt64? = nil)
       path = "/channels/#{channel_id}/messages?limit=#{limit}"
       path += "&before=#{before}" if before
       path += "&after=#{after}" if after
