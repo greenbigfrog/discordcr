@@ -43,8 +43,13 @@ module Discord
       widget_channel_id: Snowflake?,
       default_message_notifications: UInt8,
       explicit_content_filter: UInt8,
+<<<<<<< ebaae7bc0725f227d5232ce1091914b6f6073a93
       system_channel_id: Snowflake?
       member_count: Int32
+=======
+      system_channel_id: {type: UInt64?, converter: MaybeSnowflakeConverter},
+      member_count: Int32?
+>>>>>>> allow member_count not to be sent
     )
 
     {% unless flag?(:correct_english) %}
