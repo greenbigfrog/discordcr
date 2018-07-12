@@ -43,8 +43,7 @@ module Discord
       widget_channel_id: Snowflake?,
       default_message_notifications: UInt8,
       explicit_content_filter: UInt8,
-      system_channel_id: Snowflake?
-      member_count: Int32
+      system_channel_id: Snowflake?,
       member_count: Int32?
     )
 
