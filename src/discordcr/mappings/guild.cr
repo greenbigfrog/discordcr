@@ -47,6 +47,7 @@ module Discord
       @default_message_notifications = payload.default_message_notifications
       @explicit_content_filter = payload.explicit_content_filter
       @system_channel_id = payload.system_channel_id
+      @member_count = payload.member_count
     end
 
     {% unless flag?(:correct_english) %}
