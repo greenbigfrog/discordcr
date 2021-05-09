@@ -27,6 +27,7 @@ module Discord
     property default_message_notifications : UInt8
     property explicit_content_filter : UInt8
     property system_channel_id : Snowflake?
+    property member_count : UInt8
 
     # :nodoc:
     def initialize(payload : Gateway::GuildCreatePayload)
